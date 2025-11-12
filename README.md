@@ -1,5 +1,5 @@
 # Project introduction 
-This is a clean, minimal template reporitoy for starting new Python projects in AXYM --with sensible defaults for structure, environment setup and packaging.
+This is a clean, minimal template reporitoy for starting new Python projects in SCC's remote desktop --with sensible defaults for structure, environment setup and packaging.
 Automatically creates/detects a virtual environment, installs SNEE python packages and requirements.txt file. This has a suggested project structure.
 
 
@@ -21,10 +21,9 @@ In Vscode, on the left-hand tab, click "Explorer" and then click on ```setup-env
 
 ## SNEE Packages
 By default, this contains :
-- SNEETools, a python package currently containing functionality for SQL queries and notebook publishing.
-  -  [https://git.apps.axym.co.uk/snee.SNEE_ICS/AxymPyTools]
-- SNEEStyle, a python package which formats matplotlib / seaborn plots with the SNEE IF theme/guidelines.
-  -  https://git.apps.axym.co.uk/snee.SNEE_ICS/SNEEstyle
+
+- SNEE Utils, a python package which formats matplotlib/seaborn/plotly plots with the SNEE IF theme/guidelines and provides a few helper functions.
+  -  [SNEE Utils](https://github.com/SNEE-ICS/SNEE_Utils.git)
 
 
 # Explaining the files
@@ -36,8 +35,7 @@ By default, this contains :
    2. Check for any repositories you want to load from snee-packages.txt file (by default it has SNEE-IF stylings and python functions, you can add on your)
    3. Download all the Python packages from requirements.txt file
 5. ```snee-packages.txt``` --> This file lists all the repositories/packages we want to load from Gitea.
-6. ```Data```              --> This folder will have example data (GP_lookup.xlsx), or data output we get after running the SQL's.
+6. ```Data```              --> This folder will have example data, or data output placed there.
 7. ```Notebooks```         --> This folder should have all the Python/R notebooks for analysis.
-8. ```SQL```               --> This folder is to store all the SQL scripts.
 
 <hr>
