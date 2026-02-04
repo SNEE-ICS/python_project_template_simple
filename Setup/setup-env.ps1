@@ -1,7 +1,7 @@
-$VenvPath = ".\.venv"
+$VenvPath = Join-Path $PSScriptRoot "..\.venv"
 $ActivationPath = "$VenvPath\Scripts\Activate.ps1"
-$SneePackagesFile = ".\snee-packages.txt"
-$RequirementsPath = ".\requirements.txt"
+$SneePackagesFile = Join-Path $PSScriptRoot "snee-packages.txt"
+$RequirementsPath = Join-Path $PSScriptRoot "requirements.txt"
 
 
 # check if .venv exists
@@ -28,7 +28,7 @@ if (Test-Path $SneePackagesFile) {
 }
 
 # ask the user if they wish to install requirements.txt
-if (Test-Path ".\requirements.txt") { 
+if (Test-Path -LiteralPath $RequirementsPath){ 
     $InstallRequirements = Read-Host "Found requirements.txt. Do you wish to install packages from 'requirements.txt'? (y/n)"
     if ($InstallRequirements -eq 'y' -or $InstallRequirements -eq 'Y') {
         Write-Output "Installing $RequirementsPath"
