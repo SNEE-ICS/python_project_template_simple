@@ -1,13 +1,13 @@
 [icsdatahub-prd]
 account = "icsdatahub-prd"
-user = "IBRAHIM.KHAN@SUFFOLK.GOV.UK"
+user = "IamBatman@SUFFOLK.GOV.UK"
 authenticator = "externalbrowser"
 role = "SCC_ANALYST"
 warehouse = "WH__XSMALL"
 
 [icsdatahub-dev]
 account = "icsdatahub-dev"
-user = "IBRAHIM.KHAN@SUFFOLK.GOV.UK"
+user = "IamBatman@SUFFOLK.GOV.UK"
 authenticator = "externalbrowser"
 role = "SCC_ANALYST"
 warehouse = "WH__XSMALL"

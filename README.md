@@ -7,12 +7,22 @@ This is a clean, minimal template repository for starting new Python projects in
 > ⚠️ Note - Please do no rename or move (change location) of the 'Setup' folder and any files within the folder. 
 <br>
 
+
+# Steps for python setup
+1. In Vscode, on the left-hand tab, click "Explorer". Go to ```Setup``` directory and open the file ```connections.toml```
+2. Replace both the ```user``` fields with your datahub/snowflake email address and save.
+3. Now again go to ```Setup``` directory and open the file ```setup-env.ps1```
+4. At the top right of the powershell file click the play button, this will execute this powershell script.
+5. Wait and keep an eye on your terminal window to check status, type in 'y' if it promts to download packages from ```requirements.txt``` file.
+6. Once it stop running your python setup is finished and you can start on your project.
+
+
 # Virtual environment:
 Is is always recommended to use a virtual environment in any analytical product.
 This allows another person to replicate, review, contribute to, and run your project using the same underlying code packages.
 
 
-## Setup directory explained
+# Setup directory explained
 This directory contains all the files you need for python setup and integration with Snowflake.
 1.  It contains a powershell script file i.e. 'setup-env.ps1', which is core set-up file, it:
    - Checks for virtual environment at ```.\.venv```
@@ -21,18 +31,15 @@ This directory contains all the files you need for python setup and integration 
    - Checks for ```snee-packages.txt``` and attempts installation. See below for details.
    - Checks for ```requirements.txt``` and prompts the user to install the packages within, if it is present.
 
-In Vscode, on the left-hand tab, click "Explorer" and then click on ```setup-env.ps1```. Execute this powershell script. At the top right of the powershell file click the play button to do this.
-
 
 2. It also contains 'connection.toml' file : This information in this file is used to integrate snowflake and use dataset stored in snowflake directly in VS code.
 > ⚠️ Note - Please update the 'user' field in the file with your username/email.
 
 
-## SNEE Packages
+# SNEE Packages
 By default, this installs SNEE_utils package when you run the setup-env.ps1 file :
 
-- SNEE Utils, a python package which formats matplotlib/seaborn/plotly plots with the SNEE IF theme/guidelines and provides helper functions to establish a connection and save data from Snowflake Database.
-  -  [SNEE Utils](https://github.com/SNEE-ICS/SNEE_Utils.git)
+- SNEE_utils is an Internal Python Library (Python package distribution) designed for reuse by analysts within the Suffolk and North East Essex (SNEE) Intelligence Function. For more info read the README.md here --> [SNEE Utils](https://github.com/SNEE-ICS/SNEE_Utils/blob/main/README.md)
 
 
 # Explaining the files
