@@ -9,12 +9,13 @@ This is a clean, minimal template repository for starting new Python projects in
 
 
 # Steps for python setup
-1. In Vscode, on the left-hand tab, click "Explorer". Go to ```Setup``` directory and open the file ```connections.toml```
-2. Replace both the ```user``` fields with your datahub/snowflake email address and save.
-3. Now again go to ```Setup``` directory and open the file ```setup-env.ps1```
-4. At the top right of the powershell file click the play button, this will execute this powershell script.
-5. Wait and keep an eye on your terminal window to check status, type in 'y' if it promts to download packages from ```requirements.txt``` file.
-6. Once it stop running your python setup is finished and you can start on your project.
+1. In Vscode, on the left-hand tab, click "Explorer". Go to ```Setup``` directory and open the file ```connections.toml.example```
+2. Please rename the file to ```connections.toml``` , this will ensure your personal details (email) will not be pushed to github.
+3. Replace both the ```user``` fields with your datahub/snowflake email address and save.
+4. Now again go to ```Setup``` directory and open the file ```setup-env.ps1```
+5. At the top right of the powershell file click the play button, this will execute this powershell script.
+6. Wait and keep an eye on your terminal window to check status, type in 'y' if it promts to download packages from ```requirements.txt``` file.
+7. Once it stop running your python setup is finished and you can start on your project.
 
 
 # Virtual environment:
