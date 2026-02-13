@@ -9,7 +9,7 @@
 
 
 # Ignoring secrets file
-*.env.secrets
+*connections.toml
 
 # Ignoring Data files
 *.parquet
