@@ -8,7 +8,7 @@ This is a clean, minimal template repository for starting new Python projects in
 <br>
 
 
-# Steps for python setup
+# Steps for python setup (To be done time you create a new repository using this template)
 1. In Vscode, on the left-hand tab, click "Explorer". Go to ```Setup``` directory and open the file ```connections.toml.example```
 2. Please rename the file to ```connections.toml``` , this will ensure your personal details (email) will not be pushed to github.
 3. Replace both the ```user``` fields with your datahub/snowflake email address and save.
@@ -16,6 +16,15 @@ This is a clean, minimal template repository for starting new Python projects in
 5. At the top right of the powershell file click the play button, this will execute this powershell script.
 6. Wait and keep an eye on your terminal window to check status, type in 'y' if it promts to download packages from ```requirements.txt``` file.
 7. Once it stop running your python setup is finished and you can start on your project.
+
+
+# Step to set up snowflake extension on VScode (Needs to be done only once, the very first time you setup VScode and Snowflake)
+1. Go to extensions from left most bar on your VScode screen and click on Extensions
+2. Search for 'snowflake' and install.
+3. Once installed, paste in your accoutn identified/URL (You can find this in your account details on SNOWFLAKE) and click continue.
+4. Select 'Single-sign-on' as Auth Method.
+5. Type in your username/email address used to login into snowflake and you are good to do.
+6. You shouls see option like Databases and applications on your left bottom panel, similar to what you see on snowflake from browser.
 
 
 # Virtual environment:
